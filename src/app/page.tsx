@@ -18,7 +18,7 @@ export default function Home() {
  
 </div> */}
 
-      <div className="flex  items-center flex-col justify-center pt-[0px] flex-wrap bg-[#232324] bg-gradient-to-r from-[#2f261c] to-[#232324] mx-[10px] px-[15px] lg:mx-[40px] rounded-[22px] lg:h-[50vh] h-[30vh]">
+      <div className="flex  items-center flex-col justify-center pt-[0px] my-[50px] lg;my-[0] flex-wrap bg-[#232324] bg-gradient-to-r from-[#2f261c] to-[#232324] mx-[10px] px-[15px] lg:mx-[40px] rounded-[22px] lg:h-[50vh] h-[30vh]">
         <span className="text-[13px] text-[#09cbbf] p-[10px] px-[15px] rounded-[20px] bg-[#09cbbf] bg-opacity-10">
           {" "}
           MADE WITH ❤ ON SOLANA
@@ -31,26 +31,26 @@ export default function Home() {
 <Image
           src="/images/svg-1.svg"
           alt="My SVG"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
         />
         <Image
           src="/images/svg-2.svg"
           alt="My SVG"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
         />
          <Image
           src="/images/svg-4.svg"
           alt="My SVG"
-          width={100}
-          height={100}
+          width={80}
+          height={80}
         />
          </div>
       </div>
    
 
-      <div className="flex justify-between items-center lg:px-[200px] px-[10px] mb-[50px] h-[90vh] lg:flex-row flex-col py-[50px] lg:py-[10px] gap-[50px] lg:gap-[10px] ">
+      <div className="flex justify-between items-center lg:px-[200px] px-[10px] mb-[50px] h-[90vh] mt-[70px] lg:flex-row flex-col py-[50px] lg:py-[10px] gap-[50px] lg:gap-[10px] ">
         <div className="max-w-[550px] ">
           <div>
             <p className="text-[#ffa44e] font-bold flex gap-2 items-center">
