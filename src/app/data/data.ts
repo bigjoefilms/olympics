@@ -2,7 +2,7 @@ export const data = [
     {
       id: 1,
       name: {
-        first: 'John',
+        first: 'EFzmBNR....',
         last: 'Smith',
       },
       total: 2795.95,
@@ -13,7 +13,7 @@ export const data = [
     {
       id: 2,
       name: {
-        first: 'Chris',
+        first: 'AEW5QNA....',
         last: 'Adams',
       },
       total: 1195.95,
@@ -24,7 +24,7 @@ export const data = [
     {
       id: 3,
       name: {
-        first: 'Sarah',
+        first: 'FIzmBhjR....',
         last: 'Smith',
       },
       total: 495.85,
@@ -35,7 +35,7 @@ export const data = [
     {
       id: 4,
       name: {
-        first: 'Joseph',
+        first: 'BzmBNR....',
         last: 'Choo',
       },
       total: 150.45,
@@ -46,7 +46,7 @@ export const data = [
     {
       id: 5,
       name: {
-        first: 'Steve',
+        first: 'QFzmBNR....',
         last: 'Harding',
       },
       total: 175.25,
@@ -57,7 +57,7 @@ export const data = [
     {
       id: 6,
       name: {
-        first: 'Laura',
+        first: 'MFzmBNR....',
         last: 'Croft',
       },
       total: 1295.75,
@@ -68,7 +68,7 @@ export const data = [
     {
       id: 7,
       name: {
-        first: 'Michael',
+        first: 'EFzmBNR....',
         last: 'Jones',
       },
       total: 89.95,
@@ -79,7 +79,7 @@ export const data = [
     {
       id: 8,
       name: {
-        first: 'James',
+        first: 'POzmBNR....',
         last: 'Bond',
       },
       total: 689.45,
@@ -90,7 +90,7 @@ export const data = [
     {
       id: 9,
       name: {
-        first: 'Haley',
+        first: 'LKzmBNR....',
         last: 'Whiting',
       },
       total: 14.99,
@@ -101,7 +101,7 @@ export const data = [
     {
       id: 10,
       name: {
-        first: 'Tim',
+        first: 'DSzmBNR....',
         last: 'Thomas',
       },
       total: 218.99,
