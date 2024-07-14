@@ -58,7 +58,7 @@ const RecentOrders: React.FC<TransactionListProps> =   ({ searchAddress, numTx }
               <p className='text-gray-800 text-sm'  >{copied ? 'Copied!' : transaction.signature.substring(0, 20)}</p>
               <p className='text-gray-400 text-sm'>{transaction.blockTime}</p>
             </div>
-            <p className='lg:flex md:hidden absolute right-6 text-sm p-[10px] bg-[#c4f9c3] rounded-[8px]'>{transaction.confirmationStatus}</p>
+            <p className='lg:flex md:hidden absolute right-6 text-sm p-[10px] bg-[#c4f9c3] rounded-[8px]'>Finished</p>
           </li>
         ))}
       </ul>
