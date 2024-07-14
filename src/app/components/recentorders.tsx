@@ -12,11 +12,11 @@ const RecentOrders: React.FC<TransactionListProps> =   ({ searchAddress, numTx }
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [copied, setCopied] = useState(false);
 
-  const handleCopyToClipboard = () => {
-    navigator.clipboard.writeText(transaction.signature.substring(0, 10));
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500); // Reset copied state after 1.5 seconds
-  };
+  // const handleCopyToClipboard = () => {
+  //   navigator.clipboard.writeText(transaction.signature.substring(0, 10));
+  //   setCopied(true);
+  //   setTimeout(() => setCopied(false), 1500); // Reset copied state after 1.5 seconds
+  // };
   
   useEffect(() => {
     const endpoint = "https://dawn-weathered-tab.solana-devnet.quiknode.pro/4dc4791564c9683ee866a71ec1eee26d7d181f9e/";
