@@ -30,9 +30,9 @@ const orders = () => {
                 className='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer'
               >
                 <div className='flex'>
-                  <div className='bg-purple-100 p-3 rounded-lg'>
-                    <FaShoppingBag className='text-purple-800' />
-                  </div>
+                <div className='bg-[#fbcfa6] rounded-lg p-3'>
+              <FaShoppingBag className='text-[#232324]' />
+            </div>
                   <div className='pl-4'>
                     <p className='text-gray-800 font-bold'>
                       ${order.total.toLocaleString()}

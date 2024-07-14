@@ -7,7 +7,7 @@ export const data = [
       },
       total: 2795.95,
       status: 'On Hold',
-      method: 'PayPal',
+      method: 'Saros',
       date: '15 Minutes ago',
     },
     {
@@ -18,7 +18,7 @@ export const data = [
       },
       total: 1195.95,
       status: 'Processing',
-      method: 'PayPal',
+      method: 'Phantom',
       date: '23 Minutes ago',
     },
     {
@@ -29,7 +29,7 @@ export const data = [
       },
       total: 495.85,
       status: 'Completed',
-      method: 'Visa',
+      method: 'Solfare',
       date: '1 Hour ago',
     },
     {
@@ -40,7 +40,7 @@ export const data = [
       },
       total: 150.45,
       status: 'Processing',
-      method: 'MasterCard',
+      method: 'Phantom',
       date: '1 Hour ago',
     },
     {
@@ -51,7 +51,7 @@ export const data = [
       },
       total: 175.25,
       status: 'On Hold',
-      method: 'PayPal',
+      method: 'Solfare',
       date: '2 Hour ago',
     },
     {
@@ -73,7 +73,7 @@ export const data = [
       },
       total: 89.95,
       status: 'Completed',
-      method: 'MasterCard',
+      method: 'Phantom',
       date: '3 Hour ago',
     },
     {
@@ -84,7 +84,7 @@ export const data = [
       },
       total: 689.45,
       status: 'Completed',
-      method: 'Visa',
+      method: 'Saros',
       date: '7 Hour ago',
     },
     {
@@ -95,7 +95,7 @@ export const data = [
       },
       total: 14.99,
       status: 'Completed',
-      method: 'PayPal',
+      method: 'Phantom',
       date: '1 Day ago',
     },
     {
@@ -106,7 +106,7 @@ export const data = [
       },
       total: 218.99,
       status: 'Completed',
-      method: 'MasterCard',
+      method: 'Solfare',
       date: '1 Day ago',
     },
   ];
