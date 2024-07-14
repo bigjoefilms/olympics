@@ -18,11 +18,7 @@ const RecentOrders: React.FC<TransactionListProps> =   ({  numTx }) => {
 
 
 
-  // const handleCopyToClipboard = () => {
-  //   navigator.clipboard.writeText(transaction.signature.substring(0, 10));
-  //   setCopied(true);
-  //   setTimeout(() => setCopied(false), 1500); // Reset copied state after 1.5 seconds
-  // };
+ 
   
   useEffect(() => {
     const endpoint = "https://dawn-weathered-tab.solana-devnet.quiknode.pro/4dc4791564c9683ee866a71ec1eee26d7d181f9e/";
@@ -44,9 +40,17 @@ const RecentOrders: React.FC<TransactionListProps> =   ({  numTx }) => {
         console.error('Error fetching transactions:', error);
       }
     };
-
+    
     getTransactions(searchAddress, numTx);
   }, [searchAddress, numTx]);
+
+  // const handleCopyToClipboard = (signature: any) => {
+  //   navigator.clipboard.writeText(signature.substring(0, 10));
+  //   setCopied(signature);
+  //   setTimeout(() =>  1500); // Reset copied state after 1.5 seconds
+  // };
+
+  
   return (
     <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll'>
       <h1>Recent Tranfers</h1>
@@ -61,7 +65,7 @@ const RecentOrders: React.FC<TransactionListProps> =   ({  numTx }) => {
             </div>
             <div className='pl-4'>
               
-              <p className='text-gray-800 text-sm'  >{copied ? 'Copied!' : transaction.signature.substring(0, 20)}</p>
+              <p className='text-gray-800 text-sm'  >Id:{copied ? 'Copied!' : transaction.signature.substring(0, 10)}</p>
               <p className='text-gray-400 text-sm'>{transaction.blockTime}</p>
             </div>
             <p className='lg:flex md:hidden absolute right-6 text-sm p-[10px] bg-[#c4f9c3] rounded-[8px]'>Finished</p>
