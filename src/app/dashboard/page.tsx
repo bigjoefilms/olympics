@@ -18,6 +18,7 @@ export default function Dashboard (){
   const [balance, setBalance] = useState<number>(0);
   const numTx = 10;
 
+  const addres = publicKey?.toString()
   return (
     
     
@@ -30,7 +31,7 @@ export default function Dashboard (){
 <TopCards />
 <div className='p-4 grid md:grid-cols-3 grid-cols-1 gap-4'>
   <BarChart />
-  <RecentOrders searchAddress={publicKey?.toString()} numTx={numTx} />
+  <RecentOrders  numTx={numTx} />
   </div>
    
   </Sidebar>

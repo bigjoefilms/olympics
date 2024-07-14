@@ -1,4 +1,6 @@
 import React, {useEffect,useState} from 'react';
+import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+
 import { data } from '../data/data';
 import { FaShoppingBag } from 'react-icons/fa';
 const solanaWeb3 = require('@solana/web3.js');
@@ -7,10 +9,14 @@ import { Transaction, TransactionListProps } from '../types/types';
 import { getKeypairFromEnvironment } from "@solana-developers/node-helpers";
 
 
-const RecentOrders: React.FC<TransactionListProps> =   ({ searchAddress, numTx }) => {
-  const addressToUse = searchAddress || "";
+const RecentOrders: React.FC<TransactionListProps> =   ({  numTx }) => {
+  // const addressToUse = searchAddress ;
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [copied, setCopied] = useState(false);
+  const { publicKey } = useWallet();
+  const searchAddress = publicKey ? publicKey.toString() : "";
+
+
 
   // const handleCopyToClipboard = () => {
   //   navigator.clipboard.writeText(transaction.signature.substring(0, 10));
@@ -39,8 +45,8 @@ const RecentOrders: React.FC<TransactionListProps> =   ({ searchAddress, numTx }
       }
     };
 
-    getTransactions(addressToUse, numTx);
-  }, [addressToUse, numTx]);
+    getTransactions(searchAddress, numTx);
+  }, [searchAddress, numTx]);
   return (
     <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll'>
       <h1>Recent Tranfers</h1>

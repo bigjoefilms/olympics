@@ -7,6 +7,5 @@ export interface Transaction {
 }
 
 export interface TransactionListProps {
-  searchAddress: string;
   numTx: number;
 }
