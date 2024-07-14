@@ -19,13 +19,16 @@ const TopCards = () => {
   const [balance, setBalance] = useState<number>(0);
   const [usdcBalance, setUsdcBalance] = useState('');
   const walletToQuery = publicKey ? publicKey.toBase58() : '';
-  const rpcEndpoint = 'https://dawn-weathered-tab.solana-devnet.quiknode.pro/4dc4791564c9683ee866a71ec1eee26d7d181f9e/';
-  const solanaConnection = new Connection(rpcEndpoint);
+
+ 
 
       const MINT_TO_SEARCH = '2wYLrR96yEn5wPHvMFs7uULvgRJk7pWhzeXsDREtqn75'; //USDC Mint Address
  
 
   useEffect(() => {
+   const rpcEndpoint = 'https://dawn-weathered-tab.solana-devnet.quiknode.pro/4dc4791564c9683ee866a71ec1eee26d7d181f9e/';
+  const solanaConnection = new Connection(rpcEndpoint);
+  
     if (publicKey) {
       (async function getBalanceEvery10Seconds() {
         const newBalance = await connection.getBalance(publicKey);

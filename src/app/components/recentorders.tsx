@@ -47,8 +47,8 @@ const RecentOrders: React.FC<TransactionListProps> =   ({ searchAddress, numTx }
       <ul>
       {transactions.map((transaction, index) => (
           <li
-            // key={i}
-            className='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 flex items-center cursor-pointer'
+          key={transaction.signature}    
+                  className='bg-gray-50 hover:bg-gray-100 rounded-lg my-3 p-2 flex items-center cursor-pointer'
           >
             <div className='bg-[#fbcfa6] rounded-lg p-3'>
               <FaShoppingBag className='text-[#232324]' />
