@@ -1,21 +1,56 @@
+
 "use client";
-import React from 'react'
+import React, { ReactNode } from 'react';
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
+import Sidenav from '../components/sidenav';
+import Link from 'next/link';
+import Dashheader from '../components/dashheader';
+import Image from 'next/image';
+import { RxSketchLogo, RxDashboard, RxPerson } from 'react-icons/rx';
+import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { FiSettings } from 'react-icons/fi';
 
-const Sidenav = () => {
+type SidebarProps = {
+    children: ReactNode;
+  };
+  
+ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   return (
-    <div className='border-r-2 h-[100%] w-[250px] flex flex-col justify-between items-center px-[20px]'>
-        <div className='bg-[#fff] mt-[20px] px-[10px] py-[10px] text-[16px] w-full text-[#2a2a2b] border rounded-[8px] cursor-pointer'>
-            Transaction
-        </div>
 
-<div className='my-[20px] mx-[20px]'>
-<WalletMultiButton style={{ background: '#111', color: '#fff' }}/>
-</div>
-
+    <div className='flex'>
+    <div className='fixed w-20 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between'>
+      <div className='flex flex-col items-center'>
+        <Link href='/'>
+          <div className='bg-[#111] text-white p-3 rounded-lg inline-block'>
+            <RxSketchLogo size={20} />
+          </div>
+        </Link>
+        <span className='border-b-[1px] border-gray-200 w-full p-2'></span>
+        <Link href='/dashboard'>
+          <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <RxDashboard size={20} />
+          </div>
+        </Link>
+        <Link href='/list'>
+          <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <RxPerson size={20} />
+          </div>
+        </Link>
+        <Link href='/orders'>
+          <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <HiOutlineShoppingBag size={20} />
+          </div>
+        </Link>
+        <Link href='/dashboard'>
+          <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
+            <FiSettings size={20} />
+          </div>
+        </Link>
+      </div>
     </div>
-  )
+    <main className='ml-20 w-full'>{children}</main>
+  </div>
+  );
 }
-
-export default Sidenav
+export default Sidebar;

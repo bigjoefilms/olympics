@@ -18,7 +18,7 @@ export default function Home() {
  
 </div> */}
 
-      <div className="flex  items-center flex-col justify-center pt-[0px] my-[50px] lg;my-[0] flex-wrap bg-[#232324] bg-gradient-to-r from-[#2f261c] to-[#232324] mx-[10px] px-[15px] lg:mx-[40px] rounded-[22px] lg:h-[50vh] h-[30vh]">
+      <div className="flex  items-center flex-col justify-center pt-[0px] my-[30px] lg;my-[0] flex-wrap bg-[#232324] bg-gradient-to-r from-[#2f261c] to-[#232324] mx-[10px] px-[15px] lg:mx-[40px] rounded-[22px] lg:h-[50vh] h-[30vh]">
         <span className="text-[13px] text-[#09cbbf] p-[10px] px-[15px] rounded-[20px] bg-[#09cbbf] bg-opacity-10">
           {" "}
           MADE WITH ❤ ON SOLANA
@@ -31,20 +31,20 @@ export default function Home() {
 <Image
           src="/images/svg-1.svg"
           alt="My SVG"
-          width={80}
-          height={80}
+          width={60}
+          height={60}
         />
         <Image
           src="/images/svg-2.svg"
           alt="My SVG"
-          width={80}
-          height={80}
+          width={60}
+          height={60}
         />
          <Image
           src="/images/svg-4.svg"
           alt="My SVG"
-          width={80}
-          height={80}
+          width={60}
+          height={60}
         />
          </div>
       </div>
@@ -62,8 +62,8 @@ export default function Home() {
               />
               Acitve
             </p>
-            <h1 className="text-[50px] font-medium">
-              Stay organized,
+            <h1 className="text-[50px] font-medium ">
+            Stay <span className="p-[12px] bg-[#111] text-[#fff] bg-opacity-90 rounded-[12px]">organized,</span>
               <br />
               and informed
             </h1>
@@ -72,7 +72,7 @@ export default function Home() {
               user-friendly platform!
             </h3>
           </div>
-          <button className="bg-[#0c0c0c] mt-[20px] px-[24px] py-[12px] rounded-[12px] text-[#fff] cursor-pointer hover:opacity-85 text-[16px]">
+          <button className="bg-[#0c0c0c] mt-[20px] lg:px-[24px] lg:py-[12px] px-[15px] py-[7px] text-[14px] rounded-[12px] text-[#fff] cursor-pointer hover:opacity-85 lg:text-[16px]">
             Try it out
           </button>
         </div>

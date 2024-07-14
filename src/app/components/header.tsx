@@ -14,7 +14,7 @@ interface HeaderProps {
 const Header: FC<HeaderProps> = () => {
   return (
     <div className="flex justify-between lg:px-[50px] py-[30px] px-[10px]">
-      <div className=" text-[28px] font-bold items-center flex gap-2 text-[#2f261c]">
+      <div className=" text-[18px] font-bold items-center flex gap-2 text-[#2f261c]">
       <Image
         src="/images/logo.png"
         alt="logo"
@@ -38,7 +38,7 @@ const Header: FC<HeaderProps> = () => {
       
 
       <Link href={'/dashboard'}>
-     <div className="bg-[#0c0c0c]  px-[24px] py-[12px] rounded-[12px] text-[#fff] cursor-pointer hover:opacity-85 text-[16px]">
+     <div className="bg-[#0c0c0c]  lg:px-[24px] lg:py-[12px] px-[15px] py-[7px] rounded-[12px] text-[#fff] cursor-pointer hover:opacity-85 text-[16px]">
      
        Get Started
       </div>
